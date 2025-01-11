@@ -5,18 +5,18 @@ var play = document.querySelector('#playstatus');
 var playstatus = document.querySelector('#indiv');
 var dp1 = document.querySelector('#d1a');
 var clse = document.getElementById('close');
+var dropdown = document.querySelector('#la');
 var clutter = '';
 var clicked = false;
 var click = true;
 
-
-leftnav.addEventListener('click', function () {
+dropdown.addEventListener('click', function () {
     if (!clicked) {
         clicked = true;
-        initial.style.display = 'block'
+        document.querySelector('#lb').style.display = 'block'
     } else {
+        document.querySelector('#lb').style.display = 'none'
         clicked = false;
-        initial.style.display = 'none'
     }
 })
 
@@ -42,7 +42,14 @@ var arr = [
 
 
 arr.forEach(function (val, index) {
-    clutter += `<div id="st"><div id="story"><img src="${val.dp}" id="${index}"></div></div>`;
+    clutter += `<div id = "t">
+    <div id="st">
+    <div id="story">
+    <img src="${val.dp}" id="${index}">
+    </div>
+    </div> 
+      <h5>Your story</h5>
+    </div>`;
 })
 container.innerHTML = clutter;
 container.addEventListener('click', function (e) {
@@ -50,21 +57,25 @@ container.addEventListener('click', function (e) {
         play.style.display = 'initial';
         dp1.innerHTML = `<img src="${arr[e.target.id].dp}" alt=""></img>`;
         playstatus.style.backgroundImage = `url(${arr[e.target.id].story})`;
+        nav.style.zIndex = '0';
     }
     setTimeout(() => {
         box.style.overflow = 'hidden';
     }, 100)
     var hap = setTimeout(() => {
-        play.style.display = 'none'
+        box.style.overflow = 'auto';
+        play.style.display = 'none';
+        nav.style.zIndex = '2';
     }, 4000)
 
 
     clse.addEventListener('click', function () {
         clearInterval(hap);
-        play.style.display = 'none'
+        play.style.display = 'none';
+        nav.style.zIndex = '2';
+        box.style.overflow = 'auto';
     })
 
 })
 
-// close play div using cross icon.
 
