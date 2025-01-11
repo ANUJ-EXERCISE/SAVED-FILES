@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#main{
+    height: 500px;
+    border: 1px solid black;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #818284;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#a{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+#aleft{
+    display: flex;
+    gap: 120px;
+    color: black;
+}
+
+#aright{
+    display: flex;
+    gap: 20px;
+    height: fit-content;
+    color: #f9fafa;
+}
+
+#aleft ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1vw;
+    color: #f9fafa;
+    opacity: 0.7;
+}
+
+#aleft ul li:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#b{
+    height: calc(100% - 50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+
+#b #b1,#b2,#b3{
+    height: 15%;
+    width: 100%;
+    background-color: #f9fafa;
+}
+
+
+#c{
+    height: calc(100% - 80%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: right;
+    padding: 0px 60px;
+}
+
+#c img{
+    height: 100%;
+    width: 100%;
+}
+
+#c1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#c1 h4{
+    font-size: .8vw;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#c1 img{
+    width: 100px;
+}
+
+
+#c2 img{
+    width: 130px;
+}
+
+#c3{
+    display: flex;
+    color: white;
+}
+
+#c3 h6{
+    color: black;
+}
+
+#lady{
+    height: 460px;
+    width: fit-content;
+    top: 54%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    filter: drop-shadow(0 0 85px black);
+}
+
+#last{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#last h1:nth-child(2){
+    letter-spacing: 4px;
+    font-weight: 900;
+    font-size: 5.7vw;
+}
+
+#last h1:nth-child(1){
+    font-size: 3vw;
+    font-weight: 600;
+}

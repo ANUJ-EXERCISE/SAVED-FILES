@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    position: absolute;
+    height: 600px;
+    width: 90%;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+#box1{
+    width: 8%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: #473b22;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#box1 img{
+    margin-top: 20px;
+}
+
+#box2{
+    border: 1px solid red ;
+    border: none;
+    background-color: #ffffff;
+    width: 62%;
+    height: 100%;
+}
+
+#box3{
+    border: 1px solid red ;
+    border: none;
+    background-color: #2f2e3c;
+    width: 30%;
+    height: 100%;
+}
+
+#box2 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-top: 70px;
+}
+
+#box2 span{
+    display: block;
+}
+
+#box2 h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(51, 50, 50);
+    font-size: 1.3vw;;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#social{
+    margin-top: 25px;
+    margin-left: 2px;
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+#social i{
+    color: grey;
+    font-size: 1.3vw;
+}
+
+#box2 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: grey;
+    width: 45vw;
+    line-height: 2.5vw;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#us h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    /* padding-right: 60px; */
+}
+
+#us{
+    height: 5vw;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+#us i{
+    padding-top: 2vw;
+    opacity: 0.6;
+}
+
+
+#cart{
+    display: flex;
+    align-items: center;
+}
+
+#cart #sve h4{
+    margin-left: 20px;
+    color: rgb(198, 194, 194);
+}
+
+#cathead{
+    display: flex;
+    align-items: center;
+}
+
+#catalog1,#catalog2,#catalog3{
+    border: none !important;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#catalog1{
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(./Buty_biegowe_Nike_Air_Zoom_Pegasus_36_Cody_M_CI1723-700_żółte-removebg-preview.png);
+    height: 9vw;
+    width: 9vw;
+    filter: drop-shadow(10px 5px 10px grey);
+    border: 1px solid black;
+    background-color: #ebecf0;
+}
+
+#catalog2{
+    background-size: cover;
+    background-position: left;
+    height: 8vw;
+    width: 8vw;
+    border: 1px solid black;
+    background-color: #ebecf0;
+    background-image: url(./Buty_biegowe_Nike_Air_Zoom_Pegasus_36_Cody_M_CI1723-700_żółte-removebg-preview.png);
+}
+#catalog3{
+    background-size: cover;
+    background-position: top;
+    background-image: url(./Buty_biegowe_Nike_Air_Zoom_Pegasus_36_Cody_M_CI1723-700_żółte-removebg-preview.png);
+    height: 8vw;
+    width: 8vw;
+    border: 1px solid black;
+    background-color: #ebecf0;
+}
+
+#cathead img{
+    height: 100%;
+    width: fit-content;
+}
+
+#shoe{
+    background-image: url(./Buty_biegowe_Nike_Air_Zoom_Pegasus_36_Cody_M_CI1723-700_żółte-removebg-preview.png);
+    height: 80%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    filter: drop-shadow(-40px -40px 20px rgb(175, 174, 174));
+    transform: translate(-50%,-50%);
+}
+
+#usd{
+    position: absolute;
+    top: 82%;
+    border-radius: 5px;
+    background-color: #ebecf0;
+    padding: 20px;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#usd h5{
+    color: grey;
+}
+
+#usd h3{
+    font-size: 3vw;
+    margin-top: 1vw;
+    font-weight: 800;
+}
+#usd span{
+    display: inline;
+    font-size: 1.2vw;
+}
+
+#usd2 span{
+    display: inline;
+    margin-left: 10px;
+}
+
+#usd2{
+    position: absolute;
+    top: 82%;
+    left: 83%;
+    transform: translate(-50%,-50%);
+    padding: 25px ;
+    background-color: #ebc234;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 50px yellow);
+}
+
+#plus{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+#plus span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#plus i{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #ebecf0;
+}
+
+#top3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    color: white;
+    font-size: 2vw;
+    opacity: 0.7;
+}
+
+#top3 #s{
+    display: flex;
+    gap: 10px;
+}
+
+#top3 #s span{
+    color: #ebc234;
+}
+
+#top3 #menu{
+    height: 7vw;
+    width: 8vw;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color: #ebc234;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+}

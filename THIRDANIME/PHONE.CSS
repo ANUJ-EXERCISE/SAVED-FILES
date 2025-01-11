@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100vh;
+    width: 100%;
+}
+
+
+#workingarea{
+    height: 100%;
+    width: 100%;
+    background-image: url(SQUD_Deconstruction_Hoodies-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #858387;
+}
+
+#workingarea img{
+    width: 300px;
+    filter: drop-shadow(0 0 10px grey);
+}
+
+#s{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 0px 3px;
+}
+
+#ek{
+    padding: 360px 0px 0px 0px;
+}
+
+#s #s1{
+    height: 25vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s #s2{
+    border-radius: 20px;
+    height: 25vw;
+    width: 50%;
+    background-color: #cf27dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#l{
+    height: 145px;
+    background-color: rgb(255, 255, 255,0.3);
+    width: 100%;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#s1 h3{
+    font-weight: 700;
+    font-size: 4.5vw;
+    opacity: 0.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+
+#s2 h3{
+    font-weight: 700;
+    font-size: 4.5vw;
+    opacity: 0.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#l img{
+    width: 40px;
+}
+
+#l1{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+#l1 h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 2vw;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+#l2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+}
+
+#l2 h4{
+    font-weight: 600;
+}
+
+#l2 i{
+    color: black;
+    font-size: 5vw;
+}

@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in width/height */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    border-bottom: 2px solid #dadada;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5vw; 
+}
+
+#links {
+    display: flex;
+    gap: 4vw; 
+    align-items: center;
+}
+
+#nav h1{
+    font-size: 3vw;
+}
+
+#links h4 {
+    font-size: 1vw;
+}
+
+#links i{
+    display: none;
+    font-size: 1.4rem;
+}
+
+#center{
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    padding: 7vw 5vw;
+}
+
+#left h1{
+    font-size: 5vw;
+}
+
+#left p{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+}
+
+#links button{
+    height: 3vw;
+    width: 7vw;
+    background-color: #a853a1;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+#left button{
+    background-color: #a853a1;
+    height: 4vw;
+    width: 12vw;
+    font-size: 1.3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4vw;
+    color: white;
+    display: inline;
+}
+
+#left i{
+    background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+    filter: drop-shadow( 0 0 2px #a853a1);
+    margin-left: 2vw;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+}
+
+#right img{
+    height: 100%;
+    width: 100%;
+}
+
+#alag{
+    display: inline;
+}
+
+#alag h3{
+    display: inline;
+    margin-left: 1vw;
+}
+
+
+
+@media (max-width:600px){
+    #nav{
+        color: black;
+    }
+
+    #nav h1{
+        font-size: 6vw;
+    }
+
+    #links h4{
+        display: none;
+    }
+
+    #links i{
+        display: initial;
+    }
+
+    #links button{
+        display: none;
+    }
+
+    #center{
+        flex-direction: column;
+    }
+
+    #center #left{
+        width: 100%;
+        height: 45%;
+    }
+
+    #center #right{
+        width: 100%;
+        height: 55%;
+    }
+    
+    #center h1{
+        font-size: 9.9vw;
+    }
+
+    #center p{
+        font-size: 3.5vw;
+        width: 78vw;
+        line-height: 4.5vw;
+        margin-top: 4vw;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    }
+
+    #center button{
+        margin-top: 8vw;
+        height: 13vw;
+        width: 30vw;
+        font-family: cursive;
+        font-size: 5vw;
+    }
+
+    #center i{
+        margin-left: 4vw;
+    }
+
+    #alag h3{
+        display: inline;
+        margin-left: 4vw;
+
+    }
+}
