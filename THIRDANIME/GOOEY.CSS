@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+#main{
+    box-shadow: 20px 20px 40px #202020;
+    height: 640px;
+    width: 97%;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#box1{
+    height: 100%;
+    width: 50%;
+    background-color: #fc9a2d;
+}
+
+#box1 img{
+    width: 40px;
+    margin: 20px 20px;
+}
+
+#box2{
+    height: 100%;
+    width: 50%;
+    background-color: #202020;
+}
+
+#box2 ul{
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#box2 ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#box2 ul li #line{
+    height: 0px;
+    border-radius: 20px;
+    width: 80px;
+    border: 1px solid white;
+}
+
+#box2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#box2 ul li a i{
+    font-size: 3vw;
+}
+
+#imagediv{
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(0 0 70px #202020);
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+#text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+#text h1{
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: #dadada;
+    font-weight: 200;
+    word-spacing: -20px;
+    margin-left: 190px;
+    letter-spacing: 20px;
+    width: 700px;
+}
+
+#text h6{
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#bottom{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+
+#bottom h5{
+    font-weight: 200;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#bottom #firstline{
+    height: 0px;
+    margin-left: 10px;
+    width: 40px;
+    border: 1px solid #202020;
+}
+
+#bottom #secondline{
+    height: 0px;
+    width: 40px;
+    margin-right: 10px;
+    border: 1px solid #fc9a2d;
+}
+
+#bottom i{
+    background-color: white;
+    padding: 10px;
+    color: rgb(234, 102, 124);
+    border-radius: 50%;
+    box-shadow: 0 0 40px #202020;
+}
+
+#bottom h5:nth-of-type(2){
+    color: #fc9a2d;
+    font-weight: 200;
+}

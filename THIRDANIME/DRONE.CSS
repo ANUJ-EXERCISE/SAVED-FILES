@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'General sans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    height: 670px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 50px 50px 60px black;
+    width: 96%;
+    position: relative;
+}
+
+#main img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.7);
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    z-index: -100;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+#top #topa ul li{
+    display: inline-block;
+}
+
+#top #topa ul li a{
+    color: rgb(110, 108, 108);
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 1.4vw;
+}
+
+#top #topb i:nth-of-type(1){
+    margin-right: 20px;
+    transform: rotate(100deg);
+    color: white;
+}
+
+#top #topb{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+#top #topb i{
+    font-size: 1.7vw;
+}
+
+#top #topb h5{
+    color: #dadada;
+    font-size: 1.5vw;
+}
+
+#center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    align-items: flex-end;
+}
+
+#center h1{
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#center p:nth-of-type(2){
+    color: #dadada;
+    margin-bottom: 15px;
+}
+
+#center p{
+    color: #dadada;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.7;
+}
+
+#center button{
+    border: none;
+    background-color: white;
+    color: #a3a3a3;
+    padding: 7px 13px;
+    border-radius: 40px;
+}
+
+#center #image{
+    height: 150px;
+    width: 200px;
+    margin-top: 100px;
+    background-image: url(drone2.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 20px 40px 20px rgb(24, 24, 24);
+}
+
+#top #topa a:hover{
+    color: white;
+}
